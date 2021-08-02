@@ -1,0 +1,50 @@
+.banner {
+    background-image: url('images/businessman2.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: 838px 715px;
+    height: 770px;
+    display: flex;
+    
+
+    .banner__text {
+        background-color: @white;
+        box-shadow: -5px -50px 50px 50px #fff;
+                
+
+        .banner__question {
+            color: @carbon;
+            font-size: 55px;
+            line-height: 55px;
+            margin-bottom: 55px;
+        }
+    
+        .banner__answer {
+            color: @grassgreen;
+            font-size: 80px;
+            text-transform: uppercase;
+            line-height: 90px;
+            margin-bottom: 60px;
+        }
+    
+        .banner__button {
+            position: relative;
+            .banner__button-btn {
+                padding: 20px 40px;
+                border-radius: 5px;
+                box-shadow: 0 3px 10px -3px @gray;
+                .banner__button-link {
+                    color: @white;
+                    font-size:20px;
+                    font-weight: 200;
+                    letter-spacing: 0.7px;
+                }
+            }
+            .banner__button-img {
+                position: absolute;
+                bottom:1px;
+            }
+        }
+    }
+
+}

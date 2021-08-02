@@ -1,0 +1,58 @@
+.howitworks {
+    background: #f3f5f2;
+    position: relative;
+    top: 0px;
+    
+    .howitworks__section {
+        background: @beige;
+        padding-left: 125px;
+        padding-bottom: 125px;
+        padding-right: 105px;    
+
+        .howitworks__how {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+            .howitworks__how-column {
+                margin-bottom: 55px;
+                width: 490px;
+                &:nth-child(2n) {
+                    margin-bottom: 0px;
+                    margin-right: 0;
+                }
+                .howitworks__title {         
+                    margin-bottom: 5px;
+                }
+                .howitworks__descr-section {
+                    color: @carbon;
+                    .howitworks__descr {
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                }
+    
+            }
+        }
+
+        .howitworks__magic {
+            .howitworks__magic-img {
+                position: absolute;
+                z-index: 9999;
+                bottom: -129px;
+                right: 0;
+            }
+        }
+    }
+
+    .beige-triangle {
+        position: absolute;
+        top: -108px;
+    }
+    
+    .green-triangle{
+        position: absolute;
+        bottom: -106px;
+    }
+}

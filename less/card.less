@@ -1,0 +1,130 @@
+.card {
+    position: relative;
+    background: @beige;
+    padding-bottom: 145px;
+
+    .card__forms-section {
+        display: flex; 
+        margin-top: 75px;
+
+
+        .card__forms {
+            margin-right: 330px;
+            .card__bigform {
+                background-color: @white;
+                padding: 15px 40px 35px;
+                width: 455px;
+                border-radius: 5px;
+                box-shadow: 3px 3px 10px -3px @gray;
+                position: absolute;
+                z-index: 99;
+                .card__banks {
+                    margin-bottom: 25px;
+                }
+                .card__bigform-form {
+                    .card__bigform-form__card-number {
+                        margin-bottom: 15px;
+                        #number {
+                            display: inline-block;
+                            width: 100%;
+                        }
+                    }
+                    .card__bigform-form__card-date {
+                        margin-bottom: 15px;
+                        // display: flex;
+                        width: 43%;
+                        span {
+                            margin-left:5px;
+                            margin-right:5px;
+                            color: @carbon;
+                        }
+                        #month {
+                            display: inline-block;
+                            width: 42%;
+                        }
+                        #year {
+                            display: inline-block;
+                            width: 42%;
+                        }
+                    }
+                    .card__bigform-form__card-name {
+                        #name {    
+                            display: inline-block;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .card__smallform {
+                position: absolute;
+                left: 580px;
+                bottom: 10px;
+                z-index: 9;
+                height: 270px;
+                width: 185px;
+                box-shadow: 10px 11px 15px -13px #999;
+                background-color: @white;
+                padding: 15px 40px 35px;
+                border-radius: 5px;
+                
+                .card__black-thing {
+                    margin-top: 30px;
+                    width:100%;
+                    position: absolute;
+                    left: 0px;
+                    top: 0;
+                    background-color:@carbon;
+                    height: 65px;
+                    margin-bottom: 25px;
+                }
+    
+                .card__smallform-form {
+                    position: absolute;
+                    z-index: 9;
+                    top: 119px;
+                    right: 85px;
+                    text-align: end;
+                    .card__bigform-form__card-cvc2 {
+                        width: 42%;
+                        display: inline-block;
+    
+                        #cvc {
+                            width:185%;
+                        }
+                    }
+                    .card__smallform-descr {
+                        font-size: 9px;
+                        text-align: left;
+                        width: 75%;
+                        margin-left: 83px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .card__sum {
+            margin-top:35px;
+            #sum {
+                width: 485px;
+                margin-bottom: 25px;
+            }
+            .card__button {
+                padding: 10px;
+                border-radius: 10px;
+                width: 485px;
+                text-align: center;
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 25px;
+                box-shadow: 0 3px 10px -3px @gray;
+            }
+        }
+    }
+
+    .beige-triangle {
+        position: absolute;
+        left: 0;
+        bottom: 468px;
+    }
+    
+}

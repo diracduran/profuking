@@ -1,0 +1,97 @@
+.reviews {    
+    background: #fafafa;
+    padding-right: 125px;
+    padding-bottom: 107px;
+    padding-top: 0;
+
+
+    .reviews__title {
+        position: relative;
+        z-index: 999;
+
+        .reviews__h2-title {
+            position: relative;
+            z-index: 9999999;
+        }
+    }
+
+    .reviews__list {
+        .reviews__card {
+            .reviews__card-text {
+                background-color: @white;
+                box-shadow: 0 3px 10px -3px @gray;
+                border-radius: 5px;
+                padding: 65px 20px 40px;
+                min-height: 335px;
+                margin-right: 20px;
+                color: @carbon;
+                .reviews__card-title {
+                    font-weight: 700;
+                    font-size: 27px;
+                    margin-bottom: 25px;
+                }
+                .reviews__card-descr {}
+            }
+            .reviews__author {
+                color: @carbon;
+                .reviews__avatar {
+                    .reviews__img {}
+                }
+                .reviews__name {
+                    margin-left: 117px;
+                    margin-top: -72px;
+                    font-size: 22px;
+                }
+                .reviews__post {
+                    margin-left: 117px;
+                    margin-top: 7px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        
+        .reviews__arrow-button {
+            border: none;
+            position: relative;
+            top: 140px;
+        }
+    }
+
+    .reviews__question {
+        margin-top: 90px;
+        display: flex;
+        justify-content: flex-end;
+
+        .reviews__question-text {
+            font-weight: 600;
+            font-size: 30px;
+            color: #b8bfb4;
+            margin-right: 55px;
+        }
+
+        .reviews__button {
+            padding: 15px;
+            border-radius: 10px;
+            width: 435px;
+            text-align: center;
+            font-size: 25px;
+            letter-spacing: 1px;
+            line-height: 20px;
+            box-shadow: 0 3px 10px -3px @gray;
+            .reviews__link {
+                color: white;
+            }
+        }
+    }
+
+    .triangle-reversed {
+        position: relative;
+        bottom: 55px;
+        left: -125px;
+    }
+    .footer-triangle {
+        position: absolute;
+        left: 0;
+    }
+}
